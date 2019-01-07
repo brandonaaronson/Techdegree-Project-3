@@ -97,13 +97,13 @@ input::placeholder {
 input,
 select,
 textarea {
-    box-shadow: inset 0 0 10px rgba(0,0,0, .2);
+    box-shadow: inset 0 0 5px rgba(0,0,0, .2);
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-    box-shadow: 1 0 10px rgba(0,0,0, .2);
+    box-shadow: inset 0 0 10px rgba(0,0,0, .2), 0 3px 10px rgba(0,0,0, .2);
     background-color: #fff;
     transition-duration: .5s;
 }
