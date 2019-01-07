@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>The Code Review Nwesletter Signup </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
@@ -38,7 +38,7 @@
 
                     <div class="forms">
                         <label for="phone">Phone Number</label>
-                        <input type="text" name="user_phone" id="phone" placeholder="(555) 555-5555">
+                        <input type="tel" name="user_phone" id="phone" placeholder="(555) 555-5555">
                     </div>
 
                     <div class="forms">
@@ -53,8 +53,8 @@
                     
                     <div class="forms">
                         <label for="state">State</label>
-                        <select id="state" name="user_state" appearance="none" required>
-                            <option disabled selected value="choose-state">Choose State</option>
+                        <select id="state" name="user_state" required>
+                            <option disabled selected value="">Choose State</option>
                             <option value="alabama">Alabama - AL</option>
                             <option value="alaska">Alaska - AK</option>
                             <option value="arizona">Arizona - AZ
@@ -68,7 +68,7 @@
                             <option value="hawaii">Hawaii - HI</option>
                             <option value="idaho">Idaho - ID</option>
                             <option value="illinois">Illinois - IL</option>
-                            <option value=indiana">Indiana - IN</option>
+                            <option value="indiana">Indiana - IN</option>
                             <option value="iowa">Iowa - IA</option>
                             <option value="kansas">Kansas - KS</option>
                             <option value="kentucky">Kentucky - KY</option>
@@ -117,18 +117,20 @@
                 <fieldset class="newsletter">
 
                     <legend>Newsletter</legend>
-                    <p class="light">Select the newsletters you would like to recieve</p>
-
-                    <input type="checkbox" id="news-html" value="html-news" name="user-news"><label class="light" for="news-html">HTML News</label><br>
-                    <input type="checkbox" id="news-css" value="css-news" name="user-news"><label class="light" for="news-css">CSS News</label><br>
-                    <input type="checkbox" id="news-javascript" value="javascript-news" name="user-news"><label class="light" for="news-javascript">JavaScript News</label><br>
-
-                    <p class="light">Newsletter Format</p>
-
-                    <input type="radio" id="html" value="html" name="format"><label for="html" class="light">HTML</label><br>
-                    <input type="radio" id="plain-text" value="plain-text" name="format"><label for="plain-text" class="light">Plain text</label>
-
-                    <p class="light">Other topics you'd like to hear about</p>
+                    <div class="newsletter_input">
+                        <label for="news-html" class="check_group_label">Select the newsletters you would like to recieve</label><br>
+                        <input type="checkbox" id="news-html" value="html-news" name="user-news"><label class="light" for="news-html">HTML News</label><br>
+                        <input type="checkbox" id="news-css" value="css-news" name="user-news"><label class="light" for="news-css">CSS News</label><br>
+                        <input type="checkbox" id="news-javascript" value="javascript-news" name="user-news"><label class="light" for="news-javascript">JavaScript News</label>
+                    </div>
+                    
+                    <div class="newsletter_input">
+                        <label for="html" class="check_group_label">Newsletter Format</label><br>
+                        <input type="radio" id="html" value="html" name="format"><label for="html" class="light">HTML</label><br>
+                        <input type="radio" id="plain-text" value="plain-text" name="format"><label for="plain-text" class="light">Plain text</label>
+                    </div>
+                    
+                    <label for="other">Other topics you'd like to hear about</label>
                     <textarea name="user_other" id="other"></textarea>
 
                 </fieldset>
@@ -137,7 +139,7 @@
             </form>
         </div>
         <footer class="footer">
-            <p>&copy Copyright The Code Review</p>
+            <p>&copy; Copyright The Code Review</p>
         </footer>
     </body>
 </html>

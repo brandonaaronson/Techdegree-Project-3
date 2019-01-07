@@ -71,6 +71,7 @@ legend {
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea,
 select {
     padding: 10px 15px ;
@@ -110,9 +111,22 @@ textarea:focus {
 }
 
 .newsletter {
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 0;
+    display: flex;
 }
+
+.newsletter label {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.newsletter_input{
+    display:block;
+    margin-top: 20px; 
+}
+
 
 .light {
     color: #8f8f8f;
@@ -120,14 +134,16 @@ textarea:focus {
 
 input[type="radio"],
 input[type="checkbox"] {
-    margin-right: 15px;
-    margin-bottom: 20px;
+    margin: 10px 15px 20px 0;
+    padding-top: 25px;
+    
 } 
 
 textarea {
     height: 150px;
     width: 100%;
     resize: none;
+    margin-top: 15px;
 }
 
 .button {
