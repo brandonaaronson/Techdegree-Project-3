@@ -31,7 +31,7 @@ fieldset {
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    border-bottom: 2px solid #2d3945;
+    border-bottom: 3px solid #2d3945;
     text-align: center;
 }
 
@@ -73,13 +73,14 @@ input[type="text"],
 input[type="email"],
 textarea,
 select {
-    padding: 10px 10px 15px 10px;
+    padding: 10px 15px ;
     width: 100%;
     font-size: 1.2em;
     outline: 0;
     border: none;
     background-color: #f5f5f5;
     border-radius: 5px;
+    font-family: sans-serif;
 }
 
 input::placeholder {
@@ -125,6 +126,7 @@ input[type="checkbox"] {
 
 textarea {
     height: 150px;
+    width: 100%;
     resize: none;
 }
 
@@ -132,12 +134,13 @@ textarea {
     display: block;
     background-color: #4ebbb5;
     color: #fff;
-    height: 60px;
+    height: 65px;
     text-align: center;
     border-radius: 5px;
     margin: 30px 15px 0;
     width: calc(100% - 30px);
-    border: 0;   
+    border: 0;
+    box-shadow: 0 1px 10px rgba(0,0,0, .2);   
 }
 
 .footer {
@@ -162,6 +165,31 @@ textarea {
        margin-right: auto;
    }
 
+   .forms {
+    display: flex;
+    padding: 10px;
+}
+
+   .contact_info label {
+       flex-basis: 175px;
+       margin-top: 10px;
+       line-height: 30px;
+   }
+   
+  .contact {
+      flex:1;
+  }
+
+  input,
+  select {
+      flex: 1;
+    
+  }
+  #zipcode {
+      flex: .22;
+      
+
+  }
    .footer {
        margin-top: 20px;
        padding-bottom: 100px;
